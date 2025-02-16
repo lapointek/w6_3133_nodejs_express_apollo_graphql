@@ -1,0 +1,24 @@
+{
+  "name": "ex5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapointek/w6_3133_nodejs_express_apollo_graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapointek/w6_3133_nodejs_express_apollo_graphql/issues"
+  },
+  "homepage": "https://github.com/lapointek/w6_3133_nodejs_express_apollo_graphql#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "graphql": "^16.10.0"
+  }
+}

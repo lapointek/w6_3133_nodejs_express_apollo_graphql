@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lapointek/w6_3133_nodejs_express_apollo_graphql#readme",
   "dependencies": {
+    "@apollo/client": "^3.13.1",
     "express": "^4.21.2",
     "graphql": "^16.10.0"
   }

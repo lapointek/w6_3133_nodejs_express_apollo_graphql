@@ -1,9 +1,7 @@
-const express =require('express')
-const {graphqlHTTP} = require('express-graphql')
-const {buildSchema} = require('graphql')
+const { gql } = require('apollo-server-express')
 
-const schema = buildSchema(
-    `type Movie{
+const schema = gql `
+    type Movie{
         id: ID!
         name: String!
         director_name: String
@@ -20,8 +18,10 @@ const schema = buildSchema(
         type Mutation{
             addMovie(name: String!, director_name:String, production_house:String,
             release_date: String, rating: Float): Movie
-            updateMovie(id: ID!, name: Stringm director_name:String, production_house:
+            updateMovie(id: ID!, name: String director_name:String, production_house:
             String, release_date: String, rating:Float): Movie
             deleteMovie(id:ID!):ID
         }
-    `)
+    `
+
+    module.exports = schema

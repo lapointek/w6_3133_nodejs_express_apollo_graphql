@@ -16,7 +16,7 @@ const resolvers = {
     },
     Mutation: {
         // insert movie
-        async insertMovie(parent, {name, director_name, production_house, release_date, rating}, context) {
+        async addMovie(parent, {name, director_name, production_house, release_date, rating}, context) {
             const db = await context.db;
             const query = {
                 text: 'INSERT INTO Movies (name, director_name, production_house, release_date, rating) VALUES ($1, $2, $3, $4, $5) RETURNING *',
@@ -37,6 +37,7 @@ const resolvers = {
                 return result.rows[0]
             },
 
+            // delete movie
             async deleteMovie(parent, {id}, context){
                 const db = await context.db;
                 let query = {
